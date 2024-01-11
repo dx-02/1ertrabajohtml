@@ -1,0 +1,170 @@
+
+/* 1- Selectores de tipo: Selecciona todos los elementos que coincidan con con nombre del elemento especificado. Por ejemplo todos los "h1" del documento html seran de las caracteristicas especificadas dentro de las llaves. */
+
+
+
+/* 2- Selectores de clase: Selecciona todos los elementos que tienen el atributo "class" especificado. */
+
+/* 3- Selector de ID: Selecciona un elemento basandose en el valor de su atributo id. Solo puede haber un elemento con un determinado ID. */
+
+/* 4- Selector universal: El asterisco(*) es el selector universal en CSS. De forma automatica el asterisco selecciona todos los elementos en un documento. " * { color: red} (hace que todo el contenido html sea rojo)" se utiliza para resetar el codigo, se usa para empezar de nuevo un codigo por ej, algunos navegadores tienen css por defecto y con el selector universal se puede eliminar estos estilos por defecto de cada navegador. */
+
+/* 5- Selector de atributo: Selecciona elementos basándose en el valor de un determinado atributo.
+Sintaxis: (nombredelAtributo) */
+
+/* 6- Selector de hermanos adyacentes: Se define con el sigo (+). Selecciona, es decir aplica cambios al elemto que se encuentra despues del signo +. Aplica estilos a los elementos que esteen en la misma gerarquia y que esté continuo eh inmediato. Ej: "h2 + p {color: red}" 
+Para seleccionar a todos los elementos que siguen despues se tiene que suplantar el signo + por el ~.
+*/
+
+/* 7- Selector hijo: El cambiador > selecciona los elementos que son hijos directos del primer elemento.
+Sintaxis: ul > li
+Selecciona a todos los li que son hijos de ul. */
+
+/* 8- Selector descendiente: El combinador (espacio) selecciona los elementos que son descendientes del primer elemento. No importa que no esteen dentro de la misma jerakia no importa que no sean hijos directos. Lo unico que importa es que esteen dentro del selector. */
+
+
+body{
+    padding: 2rem;
+    display: flex;
+    flex-flow: column wrap;/*no tengo muy claro la parte de "wrap"*/
+    /* min-height: 100hv; */
+    background-color: rgb(245, 209, 143);
+    
+}
+
+
+.TituloPrincipal{
+
+    /* order: 3px solid black; */
+    height: 8rem;
+    /* text-align: center; cual es mejor?, esta instruccion o justify-content?, y poque se debe usar con display flex? */
+    font-size: xxx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(238, 110, 60);
+    background-image: linear-gradient(to bottom right, orange, white);
+    /* background-image: conic-gradient(at 60% orange, 40% white,#1e90ff 50%) */;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+ .Significado{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+}
+
+
+.ListaTemas {
+    position: relative;
+    font-size: 1rem;
+    padding: 2rem;
+    display: block;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-image: linear-gradient(to bottom right, rgb(241, 201, 126), white);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(247, 216, 159);
+    width: 35%; /* que es mejor poner en "px" o en "%" */
+    border-radius: 20px;
+    
+}
+
+/* la idea era hacer un borde animado pero no funciona, no hace nada */
+.ListaTemas::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(8, 8, 8);
+    animation: animate 4s linear infinite;
+}
+
+.ListaTemas::after{
+    content: '';
+    position: absolute;
+    inset: 10px;
+    /* background-color: rgb(4, 75, 97); */
+    border-radius: 16px;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+/* hasta aca es el bloque animado */
+
+.Encabezado{
+    font-size: large;
+    font-style: italic;
+} 
+
+.contenidoTexto {
+    font-size: larger;
+    font-style: unset;
+}
+
+
+.Listas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.EjListaOrdenada1{
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 236, 199);
+    box-shadow: 5px 3px 5px rgb(243, 192, 98);
+    width: 20%
+    
+}
+
+.EjListaOrdenada2{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 236, 199);
+    box-shadow: 5px 3px 5px rgb(243, 192, 98);
+    width: 20%
+}
+
+.EjListaDesordenada{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 236, 199);
+    box-shadow: 5px 3px 5px rgb(243, 192, 98);
+    width: 20%
+}
+
+.imagenesmodelo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgestructura1{
+    width: 300px;
+}
+
+.imgestructura2{
+    width: 600px;
+}
+
+footer{
+    height: 10rem;
+    display: flex;
+    align-items: end;
+}

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="sr. X" />
+    <meta name="description" content="Estructura HTML.">
+    <title>Front End</title>
+    <!-- <link rel="stylesheet" href="./css/resetpage.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    
+</head>
+
+<body>
+    <header>
+        <h1 class="TituloPrincipal">HTML</h1>
+        <nav>
+            <!--lista desordenada-->
+            <ul class="ListaTemas">
+                <li><a href="#ETIQUETAS">ETIQUETAS</a></li>
+                <li><a href="#Etiquetasquepuedenomitirsucierre">Etiquetas que pueden omitir su cierre</a></li>
+                <li><a href="#Etiquetasqueabrenynonecesitandecierre">Etiquetas que abren y no necesitan de cierre</a>
+                </li>
+                <li><a href="#Encabezados">Encabezados</a></li>
+                <li><a href="#Etiquetasdetexto">Etiquetas de texto</a></li>
+                <li><a href="#Listas">Listas</a></li>
+                <li><a href="#Enlaces">Enlaces</a></li>
+                <li><a href="#Imagenes">Imagenes</a></li>
+                <li><a href="#Audioyvideo">Audio y video</a></li>
+                <li><a href="#Input">Input</a></li>
+                <li><a href="#Iframes">iframes</a></li>
+                <li><a href="#EtiquetasSemanticas">Etiquetas Semanticas</a></li>
+                <li><a href="#Etiquetasdecontenido">Etiquetas de contenido</a></li>
+                <li><a href="#Contenedores">Contenedores</a></li>
+                <li><a href="#Detalles">Detalles</a></li>
+                <li><a href="#Datalist">Datalist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ventana modal -->
+        <section>
+            <dialog open>
+                <p>Bienvenido</p>
+                <form method="dialog">
+                    <button>ok</button>
+                </form>
+            </dialog>
+        </section>
+
+        <div class="Significado">
+
+            <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage
+        </div>
+
+        <div>
+            <p class="Encabezado">
+                HTML es un markup language, es decir, lenguaje de Hiper Marcado de
+                texto. Lo que significa que esta escrito en codigos que puede leer una
+                persona sin que sea necesario compilarlo primiero. No es un lenguaje
+                de programación; es un lenguaje de marcado que define la estructura
+                del contenido. HTML es una serie de elementos que se usan para
+                encerrar diferentes partes del contenido para que se vean o comporten
+                de determinada manera. Se encarga de la estructura de la paguína,
+                textos, imagenes, links, botones. Todo lo que se ve en la paguína y
+                podemos interactuar hacer click y demas esta puesto con html.
+            </p>
+        </div>
+
+        <article id="ETIQUETAS">
+            <u>
+                <h2>ETIQUETAS:</h2>
+            </u>
+            <p class="contenidoTexto">
+                Cuando se escribe código en HTML, estás escribiendo etiquetas HTML.
+                Como dijimos anteriormete HTML no se considera un lenguaje de
+                programación, ya que no puede crear una funcionalidad dinamica. Sin
+                embargo los usuarios web pueden crear y estructurar secciones,
+                párrafos y enlaces usando elementos, etiquetas y atributos. Las
+                etiquetas se utilizan par delimitar el inicio y el final de los
+                elementos en el marcado. Existen 142 etiquetas HTML disponibles que
+                nos permite la creacion de varios elementos.
+            </p>
+        </article>
+
+        <article id="Etiquetasquepuedenomitirsucierre">
+            <b>
+                <h2>Etiquetas que pueden omitir su cierre:</h2>
+            </b>
+            <p class="contenidoTexto">
+                Sí, ¡hasta la etiqueta html> puede omitirse!, en algunos casos.
+            </p>
+
+            <ul class="contenidoTexto">
+
+
+                <li>
+                    < /html>: puede omitirse si el elemento html> no es seguido inmediatamente por un comentario.
+                </li>
+                <li>
+                    < /head>: puede omitirse si el elemento head> no es seguido inmediatamente por un espacio o un
+                        comentario.
+                </li>
+                <li>
+                    < /body>: puede omitirse si el elemento body> no es seguido inmediatamente por un
+                        comentario.
+                </li>
+                <li>
+                    < /li>: puede omitirse si el elemento li> es seguido inmediatamente por otro elemento
+                        li> o si no hay más contenido en el elemento padre.
+                </li>
+                <li>
+                    < /dt>: puede omitirse si el elemento dt> va seguido inmediatamente por otro
+                        elemento dt> o un elemento dd>.
+                </li>
+                <li>
+                    < />: puede omitirse si el elemento dd> es seguido inmediatamente por otro
+                    elemento dd> o un elemento dt>, o si no hay más contenido en el
+                    elemento padre.
+                </li>
+                <li>
+                    < /p>: puede omitirse si el elemento p> es seguido
+                        inmediatamente por un elemento address, article, aside,
+                        blockquote, details, div, dl, fieldset, figcaption, figure,
+                        footer, form, h1, h2, h3, h4, h5, h6, header, hr, main, nav,
+                        ol, p, pre, section, table, o ul, o si no hay más contenido
+                        en el elemento primario y el elemento principal es un
+                        elemento HTML que no es elementoa, audio, del, ins, map,
+                        noscript, o video` o un elemento personalizado autónomo.
+                <li>
+                    < /rt>: puede omitirse si al elemento rt le sigue
+                        inmediatamente un elemento rt o rp, o si no hay más
+                        contenido en el elemento padre.
+                </li>
+                <li>
+                    < /rp>: puede omitirse si el elemento rp es seguido
+                        inmediatamente por un elemento rt o rp, o si no hay más
+                        contenido en el elemento padre.
+                </li>
+                <li>
+                    < /optgroup>: se puede omitir si el elemento de optgroup es
+                        seguido inmediatamente por otro elemento optgroup o si no
+                        hay más contenido en el elemento principal.
+                </li>
+                <li>
+                    < /option>: puede omitirse si el elemento de option es seguido
+                        inmediatamente por otro elemento de option, o si lo sigue
+                        inmediatamente un elemento optgroup, o si no hay más
+                        contenido en el elemento principal.
+                </li>
+                <li>
+                    < : puede omitirse si al elementocolgroup` no le sigue inmediatamente un carácter de espacio o un
+                        comentario. <li>
+                        < /caption>: puede omitirse si el elemento caption no es
+                            seguido inmediatamente por un carácter de espacio o un
+                            comentario.
+                </li>
+                <li>
+                    < /thead>: se puede omitirse si el thead es seguido
+                        inmediatamente por un elemento tbody o tfoot.
+                </li>
+                <li>
+                    < /tbody>: se puede omitirsi el elemento tbody es seguido
+                        inmediatamente por un elemento tbody o tfoot, o si no hay
+                        más contenido en el elemento principal.
+                </li>
+                <li>
+                    < /tfoot>: puede omitirse si no hay más contenido en el
+                        elemento padre.
+                </li>
+                <li>
+                    < /tr>:puede omitirse si el elemento tr es seguido
+                        inmediatamente por otro elemento tr, o si no hay más
+                        contenido en el elemento padre.
+                </li>
+                <li>
+                    < /td>: puede omitirse si el elemento td es seguido
+                        inmediatamente por un elemento td o th, o si no hay más
+                        contenido en el elemento padre.
+                </li>
+                <li>
+                    < pre/th>: puede omitirse si el elemento th es seguido
+                        inmediatamente por un elemento td o th, o si no hay más
+                        contenido en el elemento principal.
+                </li>
+            </ul>
+        </article>
+
+        <article id="Etiquetasqueabrenynonecesitandecierre">
+            <b>
+                <h2>Etiquetas que abren y no necesitan de cierre:</h2>
+            </b>
+
+            <p class="contenidoTexto">
+                Este tipo de etiquetas se denominan elementos de tipo "void", o
+                elementos vacios. Los elementos de tipo void son aquellos que no
+                pueden tener ningún contenido (incluyendo texto), y que la
+                especificación dice explícitamente que solo tienen una etiqueta de
+                apertura, y que no se debe especificar una etiqueta de cierre. Los
+                elementos tipo "void" son:area, base, br,col, embed, hr, img, input,
+                link, menuitem, meta,param, source, track, wbr.
+            </p>
+        </article>
+
+        <section id="Encabezados">
+            <h2><b>-Encabezados:</b></h2>
+
+            <p class="contenidoTexto">
+                Se utilizan para definir titulos. La etiqueta para los encabezados es " h> /h>", estas tienen un número
+                de jerarquia siendo " h1> /h1>" el titulo principal y " h6> /h6>" el de menor importancia. Se recomienda
+                que exista solo un h1 por documento como buena practica de SEO, las etiquetas de la h2 a la h6 se pueden
+                tener tantas como sea necesarias.
+                Otros ejemplos:
+            </p>
+
+            <ul>
+                <li>
+                    < title> /title></>
+                </li>
+                <li>
+                    < meta>: nombre del autor, descripcion.</>
+                </li>
+                <li>
+                    < base href=""></>
+                </li>
+            </ul>
+
+        </section>
+
+        <section id="Etiquetasdetexto">
+            <b>
+                <h2>- Etiquetas de texto:</h2>
+            </b>
+            <ul class="contenidoTexto">
+                <li>
+                    < p> /p>: define un parrafo.
+                </li>
+                <li>
+                    < pre>: indica contenido pre formateado y que debe ser preservado.
+                </li>
+                <li>
+                    < br>: salto de linea.
+                </li>
+                <li>
+                    < hr>: genera una linea y un salto de linea.
+                </li>
+                <li>
+                    < b> /b>: letra negrita.
+                </li>
+                <li>
+                    < i> /i>: letra cursiva.
+                </li>
+                <li>
+                    < tt> /tt>: monospace.
+                </li>
+                <li>
+                    < u> /u>: subrayado de texto.
+                </li>
+                <li>
+                    < mark> /mark>: remarca un texto.
+                </li>
+                <li>
+                    < span> /span>: define un bloque de texto en line.
+                </li>
+            </ul>
+        </section>
+
+        <section id="Listas">
+            <b>
+                <h2>- Listas:</h2>
+            </b>
+            <ul class="contenidoTexto">
+                <li>
+                    < ul>
+                        < /ul>: lista desordenada.
+                </li>
+                <li>
+                    < ol>
+                        < /ol>: lista ordenada.
+                </li>
+                <li>
+                    < li>
+                        < /li>: define un item o elemento de la listas.
+                </li>
+                <li>
+                    < dl>
+                        < /dl>: lista de definicion.
+                </li>
+                <li>
+                    < dt>
+                        < /dt>: termino definido(por la etiqueta "dd").
+                </li>
+                <li>
+                    < dd>
+                        < /dd>: definicion.
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="Listas">
+
+            <div class="EjListaOrdenada1">
+                Ejemplo lista ordenada 1:
+                <ol type="A" start="3">
+                    <li>Número 1</li>
+                    <li>Número 2</li>
+                    <li>Número 3</li>
+                </ol>
+                ** codigo tabla anterior.
+                <ul>
+                    <li>
+                        < ol type="A" start="3">
+                    </li>
+                    <li>
+                        < li>Número 1< /li>
+                    </li>
+                    <li>
+                        < li>Número 2< /li>
+                    </li>
+                    <li>
+                        < li>Número 3< /li>
+                    </li>
+                    <li>
+                        < /ol>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="EjListaOrdenada2">
+
+                Ejemplo lista ordenada 2:
+                <ol start="22" reversed>
+                    <li>Número 1</li>
+                    <li>Número 2</li>
+                    <li>Número 3</li>
+                    <li>Número 3</li>
+                </ol>
+                ** codigo tabla anterior.
+                <ul>
+                    <li>
+                        < ol type="1" reversed>
+                    </li>
+                    <li>
+                        < li>Número 1< /li>
+                    </li>
+                    <li>
+                        < li>Número 2< /li>
+                    </li>
+                    <li>
+                        < li>Número 3< /li>
+                    </li>
+                    <li>
+                        < /ol>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="EjListaDesordenada">
+                Ejemplo lista desordenada 1:
+                <ul type="square">
+                    <li>Número 1</li>
+                    <li>Número 2</li>
+                    <li>Número 3</li>
+                </ul>
+
+                ** codigo tabla anterior.
+                <ul>
+                    <li>
+                        < ul type="square">
+                    </li>
+                    <li>
+                        < li>Número 1< /li>
+                    </li>
+                    <li>
+                        < li>Número 2< /li>
+                    </li>
+                    <li>
+                        < li>Número 3< /li>
+                    </li>
+                    <li>
+                        < /ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <section>
+            <h2><b>-Tablas:</b></h2>
+            <ul class="contenidoTexto">
+                <li>
+                    < table>
+                        < /table>: tabla.
+                </li>
+                <li>
+                    < tr>
+                        < /tr>: fila.
+                </li>
+                <li>
+                    < td>
+                        < /td>: celda.
+                </li>
+                <li>
+                    < th>>< /th>: celda.
+                </li>
+                <li>
+                    < caption>
+                        < /caption>: titulo.
+                </li>
+            </ul>
+        </section>
+
+        <section id="Enlaces">
+            <h2><b>-Enlaces:</b></h2>
+            <ul class="contenidoTexto">
+                <li>
+                    < a href="https://www.youtube.com/watch?v=NnxrouZvnRY" target="_blank">Tutorial HTML5</>(abre enlace
+                    en otra pestaña)
+                </li><br>
+                <label>Ejemplo:</label>
+                <a href="https://www.youtube.com/watch?v=NnxrouZvnRY" target="_blank">Tutorial HTML5</a>
+            </ul>
+
+        </section>
+
+        <section id="Imagenes" class="contenidoTexto">
+            <h2><b>-Imagenes:</b></h2><br>
+            < img src="" alt="">: inserta imagenes.<br>
+                <label>Ejemplos de estructura de paginas.</label><br>
+        </section><br>
+
+        <section class="imagenesmodelo">
+
+            <img class="imgestructura1" src="./img/estructura_pagina_web.png" alt="estructura_pagina_web">
+            <img class="imgestructura2" src="./img/ejemplo-estructura-html.png" alt="ejemplo-estructura-html"><br>
+
+        </section>
+
+        <section id="Audioyvideo" class="contenidoTexto" >
+            <h2><b>-Audio y video:</b></h2><br>
+            < video src=""></ video>: inserta audio y video.
+        </section><br>
+
+        <section id="Input" class="contenidoTexto">
+            <h2><b>-Input</b></h2>
+            <ol type="1" start="1">
+                <li>
+                    < input type="text">
+                </li>
+                <li>
+                    < input type="password">
+                </li>
+                <li>
+                    < input type="radio">
+                </li>
+                <li>
+                    < input type="checkbox">
+                </li>
+                <li>
+                    < input type="button">
+                </li>
+                <li>
+                    < input type="color">
+                </li>
+                <li>
+                    < input type="email">
+                </li>
+                <li>
+                    < input type="file">
+                </li>
+                <li>
+                    < input type="hiden">
+                </li>
+                <li>
+                    < input type="image">
+                </li>
+                <li>
+                    < input type="number">
+                </li>
+            </ol>
+
+            <b>-Input ejemplos:</b>
+            <ol type="1" start="1">
+                <lable for="" name>Nombre (4 a 8 caracteres):</lable>
+                <li><input type="text" id="name" name="nombre" reired minlength="4" malength="8" size="10"></li>
+
+                <lable for="mail">Email:</lable>
+                <li><input type="email"></li>
+
+                <lable for="password">Contraseña (6 a 12 caracteres):</lable>
+                <li><input type="password" id="password" name="password" reired minlength="6" malength="12" size="10">
+                </li>
+
+                <li><input type="radio"> Hombre
+                    <input type="radio"> Mujer
+                </li>
+
+                <li><label>Eres mayor de edad.<input type="checkbox" id="cbox1" value="first_checkbox" /></label></li>
+
+                <!-- porque no me aparece el calendario -->
+
+                <li><input type="fecha-nacimiento" id="validacion-fecha" name="lafechadenacimientoes"
+                        value="2024-01-01T00:00" min="1940-01-01T00:00" max="2024-12-31T00:00"></li>
+
+                <li><input type="time" list="hrsdisponibles" />
+                    <datalist id="hrsdisponibles">
+                        <option value="03:00"></option>
+                        <option value="03:30"></option>
+                        <option value="04:00"></option>
+                    </datalist>
+                </li>
+
+                <li><input type="button" value="Comprobar datos."></li>
+
+                <!-- porque no me aparece la la camara y me aparece un bloque -->
+
+                <label for="foto">Tomate una foto:</label>
+                <li><input type="archivo" name="foto" accept="image/*" capture="usuario" /></li>
+
+                <!-- voz, -->
+
+                <labe for="voice">Grabar voz:</labe>
+                <li><input type="archivo" name="voz" accept="audio/*" capture="usuario"></li>
+
+                <li><input type="color"></li>
+                <li><input type="file"></li>
+                <li><input type="hiden"></li>
+                <li><input type="image"></li>
+                <li><input type="number"></li>
+            </ol>
+        </section>
+
+        <section id="Iframes" class="contenidoTexto">
+            <b>
+                <h2>-Iframes:</h2>
+            </b>
+            <ul>
+                <li>
+                    < frameset>
+                        < /frameset>: especifica el número de frames.
+                </li>
+                <li>
+                    < frame>
+                        < /frame>: define cada. frame.
+                </li>
+                <li>
+                    < head>
+                        < /head>: tambíen es el elemento de head.
+                </li>
+                <li>
+                    < noframe>
+                        < /noframe>: contenido alternativo.
+                </li>
+            </ul>
+        </section>
+
+        <section id="EtiquetasSemanticas"  class="contenidoTexto">
+            <h2><b>-Etiquetas Semanticas:</b></h2>
+            <ul>
+                <li>
+                    < header>
+                        < /header>
+                </li>
+                <li>
+                    < footer>
+                        < /footer>
+                </li>
+                <li>
+                    < article>
+                        < /article>
+                </li>
+                <li>
+                    < nav>
+                        < /nav>
+                </li>
+                <li>
+                    < section>
+                        < /section>
+                </li>
+                <li>
+                    < p>
+                        < /p>
+                </li>
+                <li>
+                    < main>
+                        < /main>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="Etiquetasdecontenido"  class="contenidoTexto">
+
+            <h2><b>-Etiquetas de contenido:</b></h2>
+            <p>*Todas las listas.</p>
+            <ul>
+                <li>
+                    < p>: define que debe mostrarse como un parrafo.
+                </li>
+                <li>
+                    < hr>: representa un cambio temático entre párrafos. Suele representar una línea horizontal.
+                </li>
+                <li>
+                    < pre>:indica que su contenido está preformateado y que este formato debe ser preservado.
+                </li>
+                <li>
+                    < blockquote>: representa un contenido sitado desde otra fuente.
+                </li>
+                <li>
+                    < figure>: establece una figura ilustrada dentro del documento.
+                </li>
+                <li>
+                    < figcaption>: representa la leyenda de una figura.
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="Contenedores"  class="contenidoTexto">
+
+            <h2><b>-Contenedores:</b></h2>
+            <ul>
+                <li>
+                    < div>: representa un contenedor genérico sin ningún significado especial.
+                </li>
+                <li>
+                    < section>: comienza una seccion.
+                </li>
+                <li>
+                    < article>: indica que ahi un articulo dentro de una sección.
+                </li>
+            </ul>
+            <p>*es indiferente el odenden de article y section, ademas cualquiera de los dos puede contener al otro.
+                Section tambíen espera el uso de un h2 en adelante.
+                *div se utiliza para darle formato a un parrafo por ejemplo con css.</p>
+        </section>
+
+
+        <section id="Detalles">
+
+            <h2><b>-Detalles:</b></h2>
+            <p  class="contenidoTexto">
+                < details>
+                    < /details>: es usado como widget para que el usuario pueda obtener informacion adicional.
+            </p>
+
+        </section>
+
+        <section id="Datalist"  class="contenidoTexto">
+
+            <h2>-Datalist:</h2>
+            <p>Es una lista desplegable de opciones. <br>
+                Ejemplo de codigo:</p>
+
+            <ul>
+                <li>
+                    < datalist id="opciones-elementos">
+                </li>
+                <li>
+                    < option value="CSS">
+                        < /option>
+                </li>
+                <li>
+                    < option value="javascript">
+                        < /option>
+                </li>
+                <li>
+                    < option value="linux">
+                        < /option>
+                </li>
+                <li>
+                    < option value="HTML5">
+                        < /option>
+                </li>
+                <li>
+                    < /datalist>
+                </li>
+            </ul>
+
+            <label for="opciones-lenguaje">Elija la opcion que no compone a los elementos de creacion de una
+                pagina:</label><br>
+
+            <input list="opciones-elementos" id="opciones-lenguaje" name="opciones-lenguaje" />
+
+            <!-- cual es la relacion  que tienen el for, el id y el name? -->
+            <datalist id="opciones-elementos">
+                <option value="CSS"></option>
+                <option value="javascript"></option>
+                <option value="linux"></option>
+                <option value="HTML5"></option>
+            </datalist>
+
+
+        </section>
+
+
+
+
+    </main>
+
+    <aside></aside>
+
+    <footer  class="contenidoTexto">
+        &copy;Todos los derechos reservados.
+    </footer>
+
+
+</body>
+
+</html>
